@@ -5,11 +5,27 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./index.css">
     <title>Document</title>
 </head>
-<body style="background-color: #262424">
-<p>Hello World</p>
+<body>
 
-<script src="index.js"></script>
+<div class="searchBox">
+    <div class="header">
+        <h1 class="title">Contacts</h1>
+        <input type="text" id="search" onchange="phraseOnChange(this.value)">
+
+        <input type="checkbox" value="just 18+" onclick="showOnlyAdults()"> <span>+18</span>
+
+        <input type="radio" onclick="showAll()" value="all" name="gender"> <span>all</span>
+        <input type="radio" onclick="showFemale()" value="female" name="gender"><span>female</span>
+        <input type="radio" onclick="showMale()" value="male" name="gender"><span>male</span>
+    </div>
+
+    <div class="list" id="contact-container">
+    </div>
+</div>
+
+<script src="two.js"></script>
 </body>
 </html>
