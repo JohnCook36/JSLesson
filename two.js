@@ -60,6 +60,14 @@ function getAllPeople(){
     return people
 }
 
+function getYounger(){
+    return people.sort((a,b) => a.age > b.age ? 1 : -1)
+}
+
+function getOlder(){
+   return people.sort((a,b) => a.age < b.age ? 1 : -1)
+}
+
 function showOnlyAdults(){
     let adults = getOnlyAdults()
     displayContacts(adults)
@@ -75,6 +83,16 @@ function showFemale(){
 function showMale(){
     let onlyMale = getOnlyMale()
     displayContacts(onlyMale)
+}
+
+function showOlder(){
+    let sortDescending = getOlder()
+    displayContacts(sortDescending)
+}
+
+function showYounger(){
+    let sortAscending = getYounger()
+    displayContacts(sortAscending)
 }
 
 function renderPeople(people) {
