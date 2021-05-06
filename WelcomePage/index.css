@@ -1,0 +1,51 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: sans-serif;
+    background: rgb(131,58,180);
+    background: linear-gradient(87deg,
+    rgba(131,58,180,1) 0%,
+    rgba(253,29,29,1) 50%,
+    rgba(252,176,69,1) 100%);
+    color: #ffffff;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.welcome {
+    font-family: "Arial Black", sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.button {
+    margin-top: 50px;
+}
+
+.goButton {
+    padding: 20px 70px;
+    font-size: 24px;
+    background: #222;
+    border: #532779 1px solid;
+    border-radius: 50px;
+    color: #532779;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background, color .3s linear;
+}
+
+.goButton:hover {
+    background: #532779;
+    color: #ffffff;
+}
+
+
+

@@ -1,0 +1,74 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: sans-serif;
+    background: rgb(131,58,180);
+    background: linear-gradient(87deg,
+    rgba(131,58,180,1) 0%,
+    rgba(253,29,29,1) 50%,
+    rgba(252,176,69,1) 100%);
+    color: #ffffff;
+}
+
+.main {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.authForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #222;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.input {
+    color: #ffffff;
+    background: none;
+    height: 30px;
+    border-radius: 20px;
+    border: #532779 1px solid;
+    padding-left: 10px;
+    margin: 5px 0;
+    transition: background .3s linear;
+}
+
+.input:focus {
+    background: #532779;
+}
+
+.userPass {
+    margin-top: 10px;
+}
+
+.buttonLogin {
+    margin: 30px;
+    padding: 10px 40px;
+    font-size: 24px;
+    background: #222;
+    border: #532779 1px solid;
+    border-radius: 50px;
+    color: #532779;
+    transition: background, color .3s linear;
+}
+
+.buttonLogin:hover {
+    background: #532779;
+    color: #ffffff;
+}
+
+.helpButton {
+    text-decoration: none;
+    color: #532779;
+    transition: color .3s linear;
+}
+
+.helpButton:hover {
+    color: #ffffff;
+}
