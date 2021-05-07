@@ -6,28 +6,25 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="index.css">
-    <title>Document</title>
+    <title>WST</title>
 </head>
 <body>
-
+<h1 class="title">WST</h1>
 <div class="searchBox">
-    <div class="header">
-        <h1 class="title">Contacts</h1>
-        <input type="text" id="search" onchange="phraseOnChange(this.value)">
+    <form action="#" method="get" class="form">
 
-        <input type="checkbox" value="just 18+" onclick="showOnlyAdults()"> <span>+18</span>
+        <input placeholder="Enter contact name" type="text" id="search" onchange="phraseOnChange(this.value)">
 
-        <input type="radio" onclick="showAll()" value="all" name="gender"> <span>all</span>
-        <input type="radio" onclick="showFemale()" value="female" name="gender"><span>female</span>
-        <input type="radio" onclick="showMale()" value="male" name="gender"><span>male</span>
-        <input type="radio" onclick="showOlder()" value="older" name="age"><span>older</span>
-        <input type="radio" onclick="showYounger()" value="younger" name="age"><span>younger</span>
-    </div>
+        <span><input type="checkbox" value="just 18+" onclick="showOnlyAdults()">+18</span>
 
-    <div class="list" id="contact-container">
-    </div>
+        <span><input type="radio" onclick="showAll()" value="all" name="gender">all</span>
+        <span><input type="radio" onclick="showFemale()" value="female" name="gender">female</span>
+        <span><input type="radio" onclick="showMale()" value="male" name="gender">male</span>
+        <span><input type="radio" onclick="showOlder()" value="older" name="age">older</span>
+        <span><input type="radio" onclick="showYounger()" value="younger" name="age">younger</span>
+    </form>
 </div>
-
+<div class="list" id="contact-container"></div>
 <script src="two.js"></script>
 </body>
 </html>
