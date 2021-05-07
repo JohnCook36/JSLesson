@@ -1,44 +1,53 @@
 let people = [
     {
-        name: "Jack Smith",
+        name: "Jack",
+        surname: "Smith",
         age: 16,
         gender: 'male'
     },
     {
-        name: "Sam Winchester",
+        name: "Sam",
+        surname: "Winchester",
         age: 34,
         gender: 'male'},
     {
-        name: "Din Winchester",
+        name: "Din",
+        surname: "Winchester",
         age: 36,
         gender: 'male'
     },
     {
-        name: "Ruby Miller",
+        name: "Ruby",
+        surname: "Miller",
         age: 17,
         gender: 'female'},
     {
-        name: "John Cook",
+        name: "John",
+        surname: "Cook",
         age: 24,
         gender: 'male'
     },
     {
-        name: "Lisa Taylor",
+        name: "Lisa",
+        surname: "Taylor",
         age: 14,
         gender: 'female'
     },
     {
-        name: "Mali Row",
+        name: "Mali",
+        surname: "Row",
         age: 10,
         gender: 'female'
     },
     {
-        name: "Elisabet Winchester",
+        name: "Elisabet",
+        surname: "Winchester",
         age: 29,
         gender: 'female'
     },
     {
-        name: "Bobby Singer",
+        name: "Bobby",
+        surname: "Singer",
         age: 13,
         gender: 'male'
     }
@@ -96,7 +105,7 @@ function showYounger(){
 }
 
 function renderPeople(people) {
-    return `<div class="name"> ${people.name}</div>`
+    return `<div class="user"> ${people.name} ${people.surname}</div>`
 }
 
 function renderContacts(contactsToRender) {

@@ -54,6 +54,11 @@ body, html {
     color: #833AB4FF;
     background: #222222;
     border-radius: 50px;
+    cursor: pointer;
+    font-size: 32px;
+    text-decoration: none;
+    margin: 20px 0 20px 30px;
+    font-weight: bold;
 }
 
 .list {
@@ -62,7 +67,7 @@ body, html {
     margin: 20px 0 0 40px;
 }
 
-.name {
+.user {
     padding-top: 5px;
     font-size: 20px;
 }
