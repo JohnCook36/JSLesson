@@ -11,6 +11,10 @@ body, html {
     color: #833AB4FF;
 }
 
+input {
+    outline: none;
+}
+
 .list {
     display: flex;
     align-items: center;

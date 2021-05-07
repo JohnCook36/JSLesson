@@ -9,6 +9,10 @@ body, html {
     color: #222222;
 }
 
+input {
+    outline: none;
+}
+
 .searchBox {
     display: flex;
 }
@@ -37,6 +41,10 @@ body, html {
     border: #833AB4FF 1px solid;
     padding-left: 10px;
     transition: background .3s linear;
+}
+
+#search:focus {
+    background: #833AB4FF;
 }
 
 .inputContainer {
