@@ -33,9 +33,9 @@ body, html {
     padding: 20px 70px;
     font-size: 24px;
     background: #222;
-    border: #532779 1px solid;
+    border: #833AB4FF 1px solid;
     border-radius: 50px;
-    color: #532779;
+    color: #833AB4FF;
     text-transform: uppercase;
     cursor: pointer;
     text-decoration: none;
@@ -43,7 +43,7 @@ body, html {
 }
 
 .goButton:hover {
-    background: #532779;
+    background: #833AB4FF;
     color: #ffffff;
 }
 

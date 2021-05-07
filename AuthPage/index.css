@@ -33,14 +33,14 @@ body, html {
     background: none;
     height: 30px;
     border-radius: 20px;
-    border: #532779 1px solid;
+    border: #833AB4FF 1px solid;
     padding-left: 10px;
     margin: 5px 0;
     transition: background .3s linear;
 }
 
 .input:focus {
-    background: #532779;
+    background: #833AB4FF;
 }
 
 .userPass {
@@ -52,20 +52,20 @@ body, html {
     padding: 10px 40px;
     font-size: 24px;
     background: #222;
-    border: #532779 1px solid;
+    border: #833AB4FF 1px solid;
     border-radius: 50px;
-    color: #532779;
+    color: #833AB4FF;
     transition: background, color .3s linear;
 }
 
 .buttonLogin:hover {
-    background: #532779;
+    background: #833AB4FF;
     color: #ffffff;
 }
 
 .helpButton {
     text-decoration: none;
-    color: #532779;
+    color: #833AB4FF;
     transition: color .3s linear;
 }
 
