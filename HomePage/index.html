@@ -12,16 +12,17 @@
 <a href="index.html" class="title">WST</a>
 <div class="searchBox">
     <form action="#" method="get" class="form">
-
         <input placeholder="Enter contact name" type="text" id="search" onchange="phraseOnChange(this.value)">
 
-        <span><input type="checkbox" value="just 18+" onclick="showOnlyAdults()">+18</span>
+        <div class="inputContainer">
+            <input type="checkbox" value="just 18+" onclick="showOnlyAdults()">+18
+            <input checked type="radio" onclick="showAll()" value="all" name="gender">all
+            <input type="radio" onclick="showFemale()" value="female" name="gender">female
+            <input type="radio" onclick="showMale()" value="male" name="gender">male
+            <input type="radio" onclick="showOlder()" value="older" name="age">older
+            <input type="radio" onclick="showYounger()" value="younger" name="age">younger
+        </div>
 
-        <span><input type="radio" onclick="showAll()" value="all" name="gender">all</span>
-        <span><input type="radio" onclick="showFemale()" value="female" name="gender">female</span>
-        <span><input type="radio" onclick="showMale()" value="male" name="gender">male</span>
-        <span><input type="radio" onclick="showOlder()" value="older" name="age">older</span>
-        <span><input type="radio" onclick="showYounger()" value="younger" name="age">younger</span>
     </form>
 </div>
 <div class="list" id="contact-container"></div>

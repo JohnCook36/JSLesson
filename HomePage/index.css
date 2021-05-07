@@ -1,6 +1,4 @@
 body, html {
-    height: 100%;
-    width: 100%;
     margin: 0;
     font-family: sans-serif;
     background: rgb(131, 58, 180);
@@ -13,8 +11,6 @@ body, html {
 
 .searchBox {
     display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .searchForm {
@@ -24,11 +20,9 @@ body, html {
 
 .form{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 90%;
-    padding: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
     border-radius: 50px;
     color: #833AB4FF;
     background: #222222;
@@ -37,12 +31,16 @@ body, html {
 #search {
     color: #ffffff;
     background: none;
+    width: 200px;
     height: 30px;
     border-radius: 20px;
     border: #833AB4FF 1px solid;
     padding-left: 10px;
-    width: 200px;
     transition: background .3s linear;
+}
+
+.inputContainer {
+    margin: 10px 10px 0 0;
 }
 
 .title {
