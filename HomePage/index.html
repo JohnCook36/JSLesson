@@ -12,15 +12,27 @@
 <a href="index.html" class="title">WST</a>
 <div class="searchBox">
     <form action="#" method="get" class="form">
-        <input placeholder="Enter contact name" type="text" id="search" onchange="phraseOnChange(this.value)">
+        <label for="search"></label><input placeholder="Enter contact name" type="text" id="search" onchange="phraseOnChange(this.value)">
 
         <div class="inputContainer">
-            <input type="checkbox" value="just 18+" onclick="showOnlyAdults()">+18
-            <input checked type="radio" onclick="showAll()" value="all" name="gender">all
-            <input type="radio" onclick="showFemale()" value="female" name="gender">female
-            <input type="radio" onclick="showMale()" value="male" name="gender">male
-            <input type="radio" onclick="showOlder()" value="older" name="age">older
-            <input type="radio" onclick="showYounger()" value="younger" name="age">younger
+            <label for="adult ">
+                <input id="adult " type="checkbox" value="just 18+" onclick="showOnlyAdults()">+18</label>
+
+            <label for="people">
+                <input checked id="people" type="radio" onclick="showAll()" value="all" name="gender">all</label>
+
+            <label for="female">
+                <input type="radio" id="female" onclick="showFemale()" value="female" name="gender"> all</label>
+
+            <label for="male">
+                <input type="radio" id="male" onclick="showMale()" value="male" name="gender"> male</label>
+
+            <label for="older">
+                <input type="radio" id="older" onclick="showOlder()" value="older" name="age"> older</label>
+
+            <label for="younger">
+                <input type="radio" id="younger" onclick="showYounger()" value="younger" name="age">younger</label>
+
         </div>
 
     </form>
