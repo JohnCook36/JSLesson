@@ -11,9 +11,9 @@ body, html {
     color: #833AB4FF;
 }
 
-input {
-    outline: none;
-}
+    input {
+        outline: none;
+    }
 
 .list {
     display: flex;
@@ -65,5 +65,24 @@ input {
 }
 
 .input:focus {
+    background: #833AB4FF;
+}
+
+.buttonAction {
+    color: #ffffff;
+    background: none;
+    height: 30px;
+    border-radius: 20px;
+    border: #833AB4FF 1px solid;
+    margin-top: 10px;
+    transition: background .3s linear;
+}
+
+#color {
+    background: none;
+    color: #833AB4FF;
+}
+
+.buttonAction:focus {
     background: #833AB4FF;
 }
