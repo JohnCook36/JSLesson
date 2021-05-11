@@ -12,9 +12,16 @@
 <a href="index.html" class="title">WST</a>
 <div class="searchBox">
     <form action="#" method="get" class="form">
-        <label for="search"></label><input placeholder="Enter contact name" type="text" id="search" onchange="phraseOnChange(this.value)">
+        <label for="search"></label>
+        <input placeholder="Enter contact name" type="text" id="search" onchange="phraseOnChange(this.value)">
 
         <div class="inputContainer">
+
+            <select name="" id="gender" onclick="handleGender(this.value)">
+                <option value="all">all</option>
+                <option value="male">male</option>
+                <option value="female">female</option>
+            </select>
             <label for="adult ">
                 <input id="adult " type="checkbox" value="just 18+" onclick="showOnlyAdults()">+18</label>
 

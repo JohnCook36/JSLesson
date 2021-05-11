@@ -112,8 +112,35 @@ function renderContacts(contactsToRender) {
     return contactsToRender.map(people => renderPeople(people));
 }
 
+function hasPhrase(people, phrase) {
+    return people.toLowerCase().includes(phrase.toLowerCase())
+}
+
+function filterContacts(contacts, searchPhrase) {
+    return contacts.filter(contact => hasPhrase(`${contact.name} ${contact.surname} `, searchPhrase))
+}
+
+function phraseOnChange(newSearchValue) {
+    let filteredContacts = filterContacts(contacts, newSearchValue)
+
+    displayContacts(filteredContacts)
+}
+
 function displayContacts(contactsToRender) {
     let element = document.getElementById('contact-container')
     element.innerHTML = renderContacts(contactsToRender).join(' ');
 }
+
+function handleGender(ev) {
+    if (ev === 'all') {
+        return showAll()
+    }
+    if (ev === 'male') {
+         return showMale()
+    }
+    if (ev === 'female') {
+       return showFemale()
+    }
+}
+
 displayContacts(people)
