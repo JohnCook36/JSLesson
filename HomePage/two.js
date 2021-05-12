@@ -104,6 +104,21 @@ function showYounger(){
     displayContacts(sortAscending)
 }
 
+function handleGender(ev) {
+    return (ev === 'all') ? showAll() :
+        (ev === 'male') ? showMale() : showFemale()
+}
+
+function handleAge(ev) {
+    return (ev === 'younger') ? showYounger() :
+        (ev === 'older') ? showOlder() : showAll()
+}
+
+function handleShowOnlyAdults(ev) {
+    ev = document.getElementById('adult ')
+    return (ev.checked) ? showOnlyAdults() : showAll()
+}
+
 function renderPeople(people) {
     return `<div class="user"> ${people.name} ${people.surname}</div>`
 }
@@ -121,26 +136,13 @@ function filterContacts(contacts, searchPhrase) {
 }
 
 function phraseOnChange(newSearchValue) {
-    let filteredContacts = filterContacts(contacts, newSearchValue)
-
+    let filteredContacts = filterContacts(people, newSearchValue)
     displayContacts(filteredContacts)
 }
 
 function displayContacts(contactsToRender) {
     let element = document.getElementById('contact-container')
     element.innerHTML = renderContacts(contactsToRender).join(' ');
-}
-
-function handleGender(ev) {
-    if (ev === 'all') {
-        return showAll()
-    }
-    if (ev === 'male') {
-         return showMale()
-    }
-    if (ev === 'female') {
-       return showFemale()
-    }
 }
 
 displayContacts(people)
