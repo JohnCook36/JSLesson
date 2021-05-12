@@ -9,8 +9,18 @@ body, html {
     color: #222222;
 }
 
-input {
+input, select {
     outline: none;
+}
+
+select {
+    border-radius: 10px;
+    background: none;
+    color: #ffffff;
+}
+
+option, select:hover {
+    background: #833AB4FF;
 }
 
 .searchBox {
@@ -20,6 +30,22 @@ input {
 .searchForm {
     display: flex;
     flex-direction: column;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    color: #833AB4FF;
+    background: #222222;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 32px;
+    text-decoration: none;
+    margin: 20px 0 20px 30px;
+    font-weight: bold;
 }
 
 .form{
@@ -51,20 +77,8 @@ input {
     margin: 10px 10px 0 0;
 }
 
-.title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100px;
-    color: #833AB4FF;
-    background: #222222;
-    border-radius: 50px;
-    cursor: pointer;
-    font-size: 32px;
-    text-decoration: none;
-    margin: 20px 0 20px 30px;
-    font-weight: bold;
+.label {
+    margin-left: 10px;
 }
 
 .list {

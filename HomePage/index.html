@@ -13,22 +13,22 @@
 <div class="searchBox">
     <form action="#" method="get" class="form">
         <label for="search"></label>
-        <input placeholder="Enter contact name" type="text" id="search" onchange="phraseOnChange(this.value)">
+        <input tabindex="1" placeholder="Enter contact name" type="text" id="search" onchange="phraseOnChange(this.value)">
 
         <div class="inputContainer">
 
             <label for="adult ">+18
-                <input id="adult " type="checkbox" value="just 18+" onchange="handleShowOnlyAdults()"></label>
+                <input tabindex="2" id="adult " type="checkbox" value="just 18+" onchange="handleShowOnlyAdults()"></label>
 
-            <label for="gender">Gender: </label>
-            <select name="gender" id="gender" onclick="handleGender(this.value)">
+            <label for="gender" class="label">Gender: </label>
+            <select tabindex="3" name="gender" id="gender" onclick="handleGender(this.value)">
                 <option value="all">all</option>
                 <option value="male">male</option>
                 <option value="female">female</option>
             </select>
 
-            <label for="age">Age: </label>
-            <select name="age" id="age" onchange="handleAge(this.value)">
+            <label for="age" class="label">Age: </label>
+            <select tabindex="4" name="age" id="age" onchange="handleAge(this.value)">
                 <option value="all"></option>
                 <option value="younger">younger</option>
                 <option value="older">older</option>
